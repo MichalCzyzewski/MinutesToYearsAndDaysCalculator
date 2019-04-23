@@ -5,6 +5,6 @@ public class Main
 
     public static void main(String[] args)
     {
-        MinutesToYearsAndDaysCalculator.printYearAndDays(525600);
+        MinutesToYearsAndDaysCalculator.printYearsAndDays(-525600);
     }
 }
