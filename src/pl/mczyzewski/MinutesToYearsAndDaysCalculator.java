@@ -8,18 +8,20 @@ public class MinutesToYearsAndDaysCalculator
         if (minutes < 0)
         {
             System.out.println("Invalid Value");
+        }
+
+        long year = minutes / 525600;
+        long days = minutes % 525600 / 1440;
+
+        if (year >= 1)
+        {
+
+            System.out.println(minutes + " min = " + year + " y and " + days + " d");
         } else
         {
-            long year = minutes / 525600;
-            long remainderOfYear = minutes % 525600;
-            if(year>0)
-            {
-                System.out.println(minutes + " min = " + year + " y and " + remainderOfYear + " d");
-            }else {
 
-                long days = minutes / 1440;
-                System.out.println(minutes + " min = " + year + " y and " + days + " d");
-            }
+            days = minutes / 1440;
+            System.out.println(minutes + " min = " + year + " y and " + days + " d");
         }
     }
 
