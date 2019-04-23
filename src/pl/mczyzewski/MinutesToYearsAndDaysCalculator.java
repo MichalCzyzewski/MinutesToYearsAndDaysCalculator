@@ -14,7 +14,7 @@ public class MinutesToYearsAndDaysCalculator
             long remainderOfYear = minutes % 525600;
 
 
-            System.out.println(minutes + " min = " + year + "y and " + remainderOfYear + "d");
+            System.out.println(minutes + " min = " + year + "y and " + remainderOfYear + " d");
         }
     }
 
